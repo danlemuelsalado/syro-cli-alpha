@@ -1,5 +1,12 @@
 # This is an example .goreleaser.yml file with some sensible defaults.
 # Make sure to check the documentation at https://goreleaser.com
+release:
+  # Default is extracted from the origin remote URL or empty if its private hosted.
+  # You can also use Gitlab's internal project id by setting it in the name
+  #  field and leaving the owner field empty.
+  github:
+    owner: danlemuelsalado
+    name: test-cli
 before:
   hooks:
     # You may remove this if you don't use go modules.
