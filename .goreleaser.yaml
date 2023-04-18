@@ -7,6 +7,8 @@ release:
   github:
     owner: danlemuelsalado
     name: test-cli
+env:
+  - GITHUB_TOKEN={{ .Env.GITHUB_TOKEN }}
 before:
   hooks:
     # You may remove this if you don't use go modules.
